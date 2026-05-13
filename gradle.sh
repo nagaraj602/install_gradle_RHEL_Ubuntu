@@ -7,7 +7,7 @@ echo
 echo
 echo "Installing Gradle on $distro"
 
-if [ "$distro" == "rhel" ]; then
+if [ "$distro" == "rhel" ] || [ "$distro" == "amzn" ]; then
 
     sudo yum update -y > /dev/null 2>&1
     sudo yum upgrade -y > /dev/null 2>&1
